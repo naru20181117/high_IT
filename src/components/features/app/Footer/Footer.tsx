@@ -1,7 +1,7 @@
-import { Link } from '@/components/common/Link';
-import { ContentLayout } from '@/components/features/app/Layout';
-import { SITE_NAME } from '@/config/app';
-import { sns } from '@/config/sns';
+import { Link } from '@/components/common/Link'
+import { ContentLayout } from '@/components/features/app/Layout'
+import { SITE_NAME } from '@/config/app'
+import { sns } from '@/config/sns'
 
 export const Footer = () => {
   return (
@@ -26,5 +26,5 @@ export const Footer = () => {
         </div>
       </ContentLayout>
     </footer>
-  );
-};
+  )
+}

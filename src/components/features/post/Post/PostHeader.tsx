@@ -1,14 +1,14 @@
-import { AiTwotoneTags } from 'react-icons/ai';
-import { Date } from '@/components/common/Date';
-import { Image } from '@/components/common/Image';
-import { Link } from '@/components/common/Link';
+import { AiTwotoneTags } from 'react-icons/ai'
+import { Date } from '@/components/common/Date'
+import { Image } from '@/components/common/Image'
+import { Link } from '@/components/common/Link'
 
 type Props = {
-  title: string;
-  coverImage: string;
-  date: string;
-  tags: string[];
-};
+  title: string
+  coverImage: string
+  date: string
+  tags: string[]
+}
 
 export const PostHeader = ({ title, coverImage, date, tags }: Props) => {
   return (
@@ -37,5 +37,5 @@ export const PostHeader = ({ title, coverImage, date, tags }: Props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}

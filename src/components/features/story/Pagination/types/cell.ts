@@ -1,1 +1,1 @@
-export type CellType = number | '<' | '>' | '...';
+export type CellType = number | '<' | '>' | '...'

@@ -1,11 +1,11 @@
-import { PostType } from '@/types/post';
-import { Story } from './Story';
+import { PostType } from '@/types/post'
+import { Story } from './Story'
 
 type Props = {
-  posts: PostType[];
-  icon?: React.ReactElement;
-  title: React.ReactNode;
-};
+  posts: PostType[]
+  icon?: React.ReactElement
+  title: React.ReactNode
+}
 
 export const Stories = ({ posts, icon, title }: Props) => {
   return (
@@ -28,5 +28,5 @@ export const Stories = ({ posts, icon, title }: Props) => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

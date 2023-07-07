@@ -1,3 +1,3 @@
-import NextLink from 'next/link';
+import NextLink from 'next/link'
 
-export const Link = NextLink;
+export const Link = NextLink

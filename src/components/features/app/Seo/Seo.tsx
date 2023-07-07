@@ -1,11 +1,11 @@
-import { DefaultSeo } from 'next-seo';
-import { ROOT_URL } from '@/config/app';
-import { useRootPath } from '@/hooks/useRootPath';
-import { joinPath } from '@/lib/joinPath';
+import { DefaultSeo } from 'next-seo'
+import { ROOT_URL } from '@/config/app'
+import { useRootPath } from '@/hooks/useRootPath'
+import { joinPath } from '@/lib/joinPath'
 
 export const Seo = () => {
-  const rootPath = useRootPath();
-  const imageURL = joinPath(ROOT_URL, '/assets/author.png');
+  const rootPath = useRootPath()
+  const imageURL = joinPath(ROOT_URL, '/assets/author.png')
 
   return (
     <>
@@ -60,5 +60,5 @@ export const Seo = () => {
         ]}
       />
     </>
-  );
-};
+  )
+}

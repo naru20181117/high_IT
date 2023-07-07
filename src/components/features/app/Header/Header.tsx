@@ -1,12 +1,12 @@
-import React from 'react';
-import { FiSun } from 'react-icons/fi';
-import { Link } from '@/components/common/Link';
-import { ContentLayout } from '@/components/features/app/Layout';
-import { useDarkMode } from '@/hooks/useDarkMode';
-import { NavBar } from './NavBar';
+import React from 'react'
+import { FiSun } from 'react-icons/fi'
+import { Link } from '@/components/common/Link'
+import { ContentLayout } from '@/components/features/app/Layout'
+import { useDarkMode } from '@/hooks/useDarkMode'
+import { NavBar } from './NavBar'
 
 export const Header = () => {
-  const { toggle } = useDarkMode();
+  const { toggle } = useDarkMode()
 
   return (
     <ContentLayout className="sticky top-0 z-10 py-3 bg-primary-1 shadow-sm">
@@ -33,5 +33,5 @@ export const Header = () => {
         </div>
       </nav>
     </ContentLayout>
-  );
-};
+  )
+}

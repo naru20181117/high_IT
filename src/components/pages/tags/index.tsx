@@ -1,11 +1,11 @@
-import { AiTwotoneTags } from 'react-icons/ai';
-import { Link } from '@/components/common/Link';
-import { MainLayout } from '@/components/features/app/Layout';
-import { Profile } from '@/components/features/app/Profile';
+import { AiTwotoneTags } from 'react-icons/ai'
+import { Link } from '@/components/common/Link'
+import { MainLayout } from '@/components/features/app/Layout'
+import { Profile } from '@/components/features/app/Profile'
 
 type Props = {
-  tags: string[];
-};
+  tags: string[]
+}
 
 export const Tags: React.VFC<Props> = ({ tags }) => {
   return (
@@ -30,5 +30,5 @@ export const Tags: React.VFC<Props> = ({ tags }) => {
       }
       aside={<Profile />}
     />
-  );
-};
+  )
+}

@@ -1,17 +1,17 @@
-import { Tag } from '@/components/pages/tag';
-import { getAllPosts } from '@/lib/api';
+import { Tag } from '@/components/pages/tag'
+import { getAllPosts } from '@/lib/api'
 
-type Props = React.ComponentPropsWithoutRef<typeof Tag>;
+type Props = React.ComponentPropsWithoutRef<typeof Tag>
 
-const View: React.VFC<Props> = (props: Props) => <Tag {...props} />;
+const View: React.VFC<Props> = (props: Props) => <Tag {...props} />
 
-export default View;
+export default View
 
 type Params = {
   params: {
-    tag: string;
-  };
-};
+    tag: string
+  }
+}
 
 export const getStaticProps = async ({ params }: Params) => {
   const posts = getAllPosts([
@@ -21,15 +21,15 @@ export const getStaticProps = async ({ params }: Params) => {
     'coverImage',
     'excerpt',
     'tags',
-  ]).filter((post) => post.tags?.includes(params.tag));
+  ]).filter((post) => post.tags?.includes(params.tag))
 
   return {
     props: { posts },
-  };
-};
+  }
+}
 
 export async function getStaticPaths() {
-  const tags = getAllPosts(['tags']).flatMap((post) => post.tags);
+  const tags = getAllPosts(['tags']).flatMap((post) => post.tags)
 
   return {
     paths: tags.map((tag) => {
@@ -37,8 +37,8 @@ export async function getStaticPaths() {
         params: {
           tag,
         },
-      };
+      }
     }),
     fallback: false,
-  };
+  }
 }

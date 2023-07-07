@@ -1,21 +1,21 @@
-import { NextSeo } from 'next-seo';
-import { MainLayout } from '@/components/features/app/Layout';
-import { Profile } from '@/components/features/app/Profile';
-import { Post } from '@/components/features/post/Post';
-import { Share } from '@/components/features/post/Share';
-import { Toc } from '@/components/features/post/Toc';
-import { ROOT_URL } from '@/config/app';
-import { useBreakPoint } from '@/hooks/useBreakPoint';
-import { joinPath } from '@/lib/joinPath';
-import { PostType } from '@/types/post';
+import { NextSeo } from 'next-seo'
+import { MainLayout } from '@/components/features/app/Layout'
+import { Profile } from '@/components/features/app/Profile'
+import { Post } from '@/components/features/post/Post'
+import { Share } from '@/components/features/post/Share'
+import { Toc } from '@/components/features/post/Toc'
+import { ROOT_URL } from '@/config/app'
+import { useBreakPoint } from '@/hooks/useBreakPoint'
+import { joinPath } from '@/lib/joinPath'
+import { PostType } from '@/types/post'
 
 type Props = {
-  post: PostType;
-};
+  post: PostType
+}
 
 export const Posts: React.VFC<Props> = ({ post }) => {
-  const lg = useBreakPoint('lg');
-  const imageURL = joinPath(ROOT_URL, post.ogImage.url);
+  const lg = useBreakPoint('lg')
+  const imageURL = joinPath(ROOT_URL, post.ogImage.url)
 
   return (
     <>
@@ -65,5 +65,5 @@ export const Posts: React.VFC<Props> = ({ post }) => {
         }
       />
     </>
-  );
-};
+  )
+}

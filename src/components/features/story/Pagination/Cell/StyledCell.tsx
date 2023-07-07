@@ -1,17 +1,17 @@
-import { cn } from '@/lib/cn';
+import { cn } from '@/lib/cn'
 
 const variants = {
   default: '',
   arrow: '',
   ellipsis: 'w-auto px-1',
-};
+}
 
 type Props = {
-  children: React.ReactNode;
-  variant?: keyof typeof variants;
-  active?: boolean;
-  disabled?: boolean;
-};
+  children: React.ReactNode
+  variant?: keyof typeof variants
+  active?: boolean
+  disabled?: boolean
+}
 
 export const StyledCell: React.VFC<Props> = ({
   children,
@@ -29,4 +29,4 @@ export const StyledCell: React.VFC<Props> = ({
   >
     {children}
   </div>
-);
+)

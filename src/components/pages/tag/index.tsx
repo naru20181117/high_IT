@@ -1,16 +1,16 @@
-import { useRouter } from 'next/router';
-import { FaHashtag } from 'react-icons/fa';
-import { MainLayout } from '@/components/features/app/Layout';
-import { Profile } from '@/components/features/app/Profile';
-import { Stories } from '@/components/features/story/Stories';
-import { PostType } from '@/types/post';
+import { useRouter } from 'next/router'
+import { FaHashtag } from 'react-icons/fa'
+import { MainLayout } from '@/components/features/app/Layout'
+import { Profile } from '@/components/features/app/Profile'
+import { Stories } from '@/components/features/story/Stories'
+import { PostType } from '@/types/post'
 
 type Props = {
-  posts: PostType[];
-};
+  posts: PostType[]
+}
 
 export const Tag: React.VFC<Props> = ({ posts }) => {
-  const tag = useRouter().query.tag;
+  const tag = useRouter().query.tag
 
   return (
     <MainLayout
@@ -21,5 +21,5 @@ export const Tag: React.VFC<Props> = ({ posts }) => {
       }
       aside={<Profile />}
     />
-  );
-};
+  )
+}

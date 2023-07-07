@@ -1,18 +1,18 @@
-import { Posts } from '@/components/pages/posts';
-import { getPostBySlug, getAllPosts } from '@/lib/api';
-import markdownToHtml from '@/lib/markdownToHtml';
+import { Posts } from '@/components/pages/posts'
+import { getPostBySlug, getAllPosts } from '@/lib/api'
+import markdownToHtml from '@/lib/markdownToHtml'
 
-type Props = React.ComponentPropsWithoutRef<typeof Posts>;
+type Props = React.ComponentPropsWithoutRef<typeof Posts>
 
-const View: React.VFC<Props> = (props: Props) => <Posts {...props} />;
+const View: React.VFC<Props> = (props: Props) => <Posts {...props} />
 
-export default View;
+export default View
 
 type Params = {
   params: {
-    slug: string;
-  };
-};
+    slug: string
+  }
+}
 
 export async function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug, [
@@ -25,8 +25,8 @@ export async function getStaticProps({ params }: Params) {
     'coverImage',
     'excerpt',
     'tags',
-  ]);
-  const content = await markdownToHtml(post.content || '');
+  ])
+  const content = await markdownToHtml(post.content || '')
 
   return {
     props: {
@@ -35,11 +35,11 @@ export async function getStaticProps({ params }: Params) {
         content,
       },
     },
-  };
+  }
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug']);
+  const posts = getAllPosts(['slug'])
 
   return {
     paths: posts.map((post) => {
@@ -47,8 +47,8 @@ export async function getStaticPaths() {
         params: {
           slug: post.slug,
         },
-      };
+      }
     }),
     fallback: false,
-  };
+  }
 }

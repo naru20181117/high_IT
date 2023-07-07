@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   settings: {
@@ -116,4 +116,4 @@ module.exports = {
 
     '@next/next/no-img-element': 'off',
   },
-};
+}

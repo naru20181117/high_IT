@@ -1,11 +1,11 @@
-import { Home } from '@/components/pages/home';
-import { getAllPosts } from '@/lib/api';
+import { Home } from '@/components/pages/home'
+import { getAllPosts } from '@/lib/api'
 
-type Props = React.ComponentPropsWithoutRef<typeof Home>;
+type Props = React.ComponentPropsWithoutRef<typeof Home>
 
-const View: React.VFC<Props> = (props: Props) => <Home {...props} />;
+const View: React.VFC<Props> = (props: Props) => <Home {...props} />
 
-export default View;
+export default View
 
 export const getStaticProps = async () => {
   const posts = getAllPosts([
@@ -14,9 +14,9 @@ export const getStaticProps = async () => {
     'slug',
     'coverImage',
     'excerpt',
-  ]).slice(0, 4);
+  ]).slice(0, 4)
 
   return {
     props: { posts },
-  };
-};
+  }
+}

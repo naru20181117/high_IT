@@ -1,9 +1,9 @@
-import { AppProps } from 'next/app';
-import '@/styles/index.css';
-import { Footer } from '@/components/features/app/Footer';
-import { Header } from '@/components/features/app/Header';
-import { ContentLayout } from '@/components/features/app/Layout';
-import { Seo } from '@/components/features/app/Seo';
+import { AppProps } from 'next/app'
+import '@/styles/index.css'
+import { Footer } from '@/components/features/app/Footer'
+import { Header } from '@/components/features/app/Header'
+import { ContentLayout } from '@/components/features/app/Layout'
+import { Seo } from '@/components/features/app/Seo'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -21,5 +21,5 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <Footer />
       </div>
     </>
-  );
+  )
 }

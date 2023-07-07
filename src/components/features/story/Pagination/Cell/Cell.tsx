@@ -1,13 +1,13 @@
-import { Link } from '@/components/common/Link';
-import { ConditionalLink } from '@/components/common/Link/ConditionalLink';
-import { CellType } from '../types/cell';
-import { StyledCell } from './StyledCell';
+import { Link } from '@/components/common/Link'
+import { ConditionalLink } from '@/components/common/Link/ConditionalLink'
+import { CellType } from '../types/cell'
+import { StyledCell } from './StyledCell'
 
 type Props = {
-  cell: CellType;
-  page: number;
-  count: number;
-};
+  cell: CellType
+  page: number
+  count: number
+}
 
 export const Cell: React.VFC<Props> = ({ cell, page, count }) => {
   switch (cell) {
@@ -20,7 +20,7 @@ export const Cell: React.VFC<Props> = ({ cell, page, count }) => {
             </StyledCell>
           </button>
         </ConditionalLink>
-      );
+      )
     case '>':
       return (
         <ConditionalLink
@@ -33,9 +33,9 @@ export const Cell: React.VFC<Props> = ({ cell, page, count }) => {
             </StyledCell>
           </button>
         </ConditionalLink>
-      );
+      )
     case '...':
-      return <StyledCell variant="ellipsis">{cell}</StyledCell>;
+      return <StyledCell variant="ellipsis">{cell}</StyledCell>
     default:
       return (
         <Link href={`/posts/page/${cell}`} passHref>
@@ -43,6 +43,6 @@ export const Cell: React.VFC<Props> = ({ cell, page, count }) => {
             <StyledCell active={cell === page}>{cell}</StyledCell>
           </a>
         </Link>
-      );
+      )
   }
-};
+}

@@ -1,6 +1,6 @@
-import { Slot } from '@radix-ui/react-slot';
+import { Slot } from '@radix-ui/react-slot'
 
-type Props = React.ComponentPropsWithoutRef<'div'>;
+type Props = React.ComponentPropsWithoutRef<'div'>
 
 export const ContentLayout: React.VFC<Props> = ({ children, ...props }) => {
   return (
@@ -9,5 +9,5 @@ export const ContentLayout: React.VFC<Props> = ({ children, ...props }) => {
         <div className="container xl:max-w-7xl mx-auto">{children}</div>
       </div>
     </Slot>
-  );
-};
+  )
+}

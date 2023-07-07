@@ -1,5 +1,5 @@
-import { Link } from '@/components/common/Link';
-import { links } from '@/config/links';
+import { Link } from '@/components/common/Link'
+import { links } from '@/config/links'
 
 export const NavBar = () => {
   return (
@@ -12,5 +12,5 @@ export const NavBar = () => {
         </Link>
       ))}
     </>
-  );
-};
+  )
+}

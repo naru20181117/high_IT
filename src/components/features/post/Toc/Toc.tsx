@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
-import { MdOutlineContentCopy } from 'react-icons/md';
-import tocbot from 'tocbot';
+import { useEffect } from 'react'
+import { MdOutlineContentCopy } from 'react-icons/md'
+import tocbot from 'tocbot'
 
 export const Toc: React.VFC = () => {
   useEffect(() => {
@@ -9,10 +9,10 @@ export const Toc: React.VFC = () => {
       contentSelector: '.post',
       headingSelector: 'h1, h2, h3',
       scrollSmoothOffset: -80,
-    });
+    })
 
-    return () => tocbot.destroy();
-  }, []);
+    return () => tocbot.destroy()
+  }, [])
 
   return (
     <div className="select-none vstack gap-3 p-6 bg-primary-1">
@@ -24,5 +24,5 @@ export const Toc: React.VFC = () => {
       </div>
       <nav className="toc" />
     </div>
-  );
-};
+  )
+}

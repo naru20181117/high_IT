@@ -9,24 +9,24 @@ import {
   HatenaShareButton,
   TwitterIcon,
   TwitterShareButton,
-} from 'react-share';
-import { MdShare } from 'react-icons/md';
-import { ROOT_URL, SITE_NAME } from '@/config/app';
-import { PostType } from '@/types/post';
+} from 'react-share'
+import { MdShare } from 'react-icons/md'
+import { ROOT_URL, SITE_NAME } from '@/config/app'
+import { PostType } from '@/types/post'
 
 type Props = {
-  post: PostType;
-};
+  post: PostType
+}
 
-const SIZE = 40;
+const SIZE = 40
 
 export const Share: React.VFC<Props> = ({ post }) => {
-  const { title, slug, ogImage } = post;
+  const { title, slug, ogImage } = post
 
-  const url = `${ROOT_URL}/posts/${slug}`;
-  const config = { title, url };
+  const url = `${ROOT_URL}/posts/${slug}`
+  const config = { title, url }
 
-  const tags = post.tags.map((tag) => tag.split(' ')[0]);
+  const tags = post.tags.map((tag) => tag.split(' ')[0])
 
   return (
     <div className="select-none vstack gap-3 p-6 bg-primary-1">
@@ -59,5 +59,5 @@ export const Share: React.VFC<Props> = ({ post }) => {
         </HatenaShareButton>
       </div>
     </div>
-  );
-};
+  )
+}

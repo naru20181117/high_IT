@@ -1,4 +1,4 @@
-import { Link } from '@/components/common/Link';
+import { Link } from '@/components/common/Link'
 
 const View = () => (
   <div className="vstack items-center p-8 bg-primary-1">
@@ -17,6 +17,6 @@ const View = () => (
       <a className="px-10 button">Go home</a>
     </Link>
   </div>
-);
+)
 
-export default View;
+export default View

@@ -1,14 +1,14 @@
-import { RiMenu4Line } from 'react-icons/ri';
+import { RiMenu4Line } from 'react-icons/ri'
 import {
   DropdownMenu,
   DropdownMenuItem,
-} from '@/components/common/DropdownMenu';
-import { Link } from '@/components/common/Link';
-import { links } from '@/config/links';
+} from '@/components/common/DropdownMenu'
+import { Link } from '@/components/common/Link'
+import { links } from '@/config/links'
 
 type Props = {
-  children?: React.ReactNode;
-};
+  children?: React.ReactNode
+}
 
 export const Hamburger: React.VFC<Props> = ({ children }) => {
   return (
@@ -46,5 +46,5 @@ export const Hamburger: React.VFC<Props> = ({ children }) => {
       </div>
       {children}
     </DropdownMenu>
-  );
-};
+  )
+}

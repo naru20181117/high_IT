@@ -1,14 +1,14 @@
-import { Date } from '@/components/common/Date';
-import { Image } from '@/components/common/Image';
-import { Link } from '@/components/common/Link';
+import { Date } from '@/components/common/Date'
+import { Image } from '@/components/common/Image'
+import { Link } from '@/components/common/Link'
 
 type Props = {
-  title: string;
-  coverImage: string;
-  date: string;
-  excerpt: string;
-  slug: string;
-};
+  title: string
+  coverImage: string
+  date: string
+  excerpt: string
+  slug: string
+}
 
 export const Story = ({ title, coverImage, date, excerpt, slug }: Props) => {
   return (
@@ -30,5 +30,5 @@ export const Story = ({ title, coverImage, date, excerpt, slug }: Props) => {
         </div>
       </a>
     </Link>
-  );
-};
+  )
+}
