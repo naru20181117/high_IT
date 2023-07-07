@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "high-it",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint",
     "lint-autofix": "next lint --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
+    "format-check": "prettier --check './src/**/*.{jsx,ts,tsx}' --ignore-path .gitignore",
     "type-check": "tsc --noEmit",
     "prepare": "husky install"
   },
