@@ -7,8 +7,9 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint-autofix": "next lint --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
+    "type-check": "tsc --noEmit",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -59,5 +60,8 @@
     "typescript": "4.7.2",
     "unified": "^10.1.2",
     "zustand": "^4.0.0-rc.1"
+  },
+  "dependencies": {
+    "tsc": "^2.0.4"
   }
 }
