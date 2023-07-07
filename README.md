@@ -1,4 +1,4 @@
-# Blog Template
+# high_IT Template
 
 個人ブログのテンプレートです。
 

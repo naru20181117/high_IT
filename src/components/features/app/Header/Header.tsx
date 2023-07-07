@@ -13,9 +13,10 @@ export const Header = () => {
       <nav className="hstack justify-between">
         <Link href="/" passHref>
           <a className="select-none text-primary-1 text-2xl md:text-3xl font-bold">
-            Blog
+            high_IT はいっと
           </a>
         </Link>
+        <p>技術とサービスのブログ</p>
 
         <div className="hidden lg:flex">
           <NavBar />

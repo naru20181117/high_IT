@@ -43,7 +43,7 @@ export const Share: React.VFC<Props> = ({ post }) => {
           title={title}
           url={url}
           via={SITE_NAME}
-          related={[SITE_NAME, 'Next.js']}
+          related={[SITE_NAME, 'なる']}
           hashtags={tags}
         >
           <TwitterIcon size={SIZE} round />

@@ -8,14 +8,23 @@ export const Profile = () => (
       <Image
         className="object-cover w-28 h-28 rounded-full"
         alt="avatar"
-        src="/assets/author.png"
+        src="/assets/author.jpeg"
       />
-      <h1 className="text-2xl font-semibold text-primary-1">Next.js</h1>
+      <h1 className="text-2xl font-semibold text-primary-1">なる</h1>
     </div>
 
     <p className="text-primary-1">
-      Modern JavaScript Framework: hybrid static & server rendering, TypeScript
-      support, smart bundling, route pre-fetching...
+      アイデアとエンジニアのマッチングアプリ
+      <br />
+      http://ideee.tech の制作者
+      <br />
+      フリーランスエンジニア
+      <br />
+      TechコミュニティIncrement.運営
+      <br />
+      とにかくほめるLT会主催
+      <br />
+      世の中の「もったいない」をITの力で無くすためサービスづくり中🚀
     </p>
 
     <div className="flex gap-4">
